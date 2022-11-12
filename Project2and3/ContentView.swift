@@ -26,6 +26,11 @@ struct ContentView: View {
                         Image(systemName: "calendar.circle")
                         Text("Events")
                     }
+                SportsView()
+                    .tabItem{
+                        Image(systemName: "circle")
+                        Text("Avtivities")
+                    }
                 TestView()
                     .tabItem{
                         Image(systemName: "person.crop.circle.fill")

@@ -9,7 +9,34 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VStack{
+                Text("Announcements:")
+                    .font(.title)
+                Image(systemName: "square")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.red)
+            }
+            .frame(width: 375, height: 200)
+            .background(Color.white)
+            .cornerRadius(25)
+            .shadow(radius: 20)
+            .padding(.horizontal)
+            VStack{
+                Text("Upcomming games:")
+                    .font(.title)
+                Image(systemName: "square")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.red)
+            }
+            .frame(width: 375, height: 200)
+            .background(Color.white)
+            .cornerRadius(25)
+            .shadow(radius: 20)
+            .padding(.horizontal)
+        }
     }
 }
 
