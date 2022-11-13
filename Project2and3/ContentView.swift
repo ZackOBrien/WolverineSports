@@ -28,7 +28,7 @@ struct ContentView: View {
                     }
                 SportsView()
                     .tabItem{
-                        Image(systemName: "circle")
+                        Image(systemName: "list.bullet.clipboard")
                         Text("Avtivities")
                     }
                 ProfileView()
