@@ -28,6 +28,7 @@ struct TeamView: View {
                 Text("Thomas St. John")
                 Text("Michael Kutschke")
                 Text("Jeff Boyd")
+                Text("Kat Shi")
             }
         }
     }
