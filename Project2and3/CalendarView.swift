@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @State var selectedDate: Date = Date()
     var body: some View {
                 VStack() {
             Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
