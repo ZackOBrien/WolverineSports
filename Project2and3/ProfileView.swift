@@ -20,6 +20,23 @@ struct ProfileView: View {
                     .font(.title2)
                     .bold()
             }
+            Text("Your Teams:")
+                .font(.title2)
+                .bold()
+                .frame(maxWidth:.infinity, alignment: .leading)
+            
+            ScrollView(.horizontal) {
+                HStack(spacing: 20) {
+                    ForEach(0..<10) {
+                        Text("Item \($0)")
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .frame(width: 200, height: 150)
+                            .background(.red)
+                            .cornerRadius(20)
+                    }
+                }
+            }
             
         }
     }
@@ -27,6 +44,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
+        ProfileView()
     }
 }
