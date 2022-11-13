@@ -16,7 +16,7 @@ struct SportsView: View {
                         TestView()
                     } label: {
                         HStack{
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "football")
                                 .resizable()
                                 .frame(width: 85, height: 85, alignment: .leading)
                                 .foregroundColor(.red)
@@ -37,7 +37,7 @@ struct SportsView: View {
                         TestView()
                     } label: {
                         HStack{
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "basketball")
                                 .resizable()
                                 .frame(width: 85, height: 85, alignment: .leading)
                                 .foregroundColor(.red)
@@ -58,7 +58,7 @@ struct SportsView: View {
                         TestView()
                     } label: {
                         HStack{
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "figure.table.tennis")
                                 .resizable()
                                 .frame(width: 85, height: 85, alignment: .leading)
                                 .foregroundColor(.red)
@@ -79,7 +79,7 @@ struct SportsView: View {
                         TestView()
                     } label: {
                         HStack{
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "soccerball")
                                 .resizable()
                                 .frame(width: 85, height: 85, alignment: .leading)
                                 .foregroundColor(.red)
@@ -100,7 +100,7 @@ struct SportsView: View {
                         TestView()
                     } label: {
                         HStack{
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "volleyball")
                                 .resizable()
                                 .frame(width: 85, height: 85, alignment: .leading)
                                 .foregroundColor(.red)
