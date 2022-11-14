@@ -1,8 +1,8 @@
 //
 //  CalendarView.swift
-//  Project2and3
+//  Project2_3Test
 //
-//  Created by Zack O'Brien on 11/11/22.
+//  Created by Christopher Gerello on 11/13/22.
 //
 
 import SwiftUI
@@ -10,21 +10,38 @@ import SwiftUI
 struct CalendarView: View {
     @State var selectedDate: Date = Date()
     var body: some View {
-                VStack() {
+        VStack() {
             Text(selectedDate.formatted(date: .abbreviated, time: .omitted))
-                .font(.system(size: 28))
+                .font(.system(size: 23))
                 .bold()
-                .foregroundColor(Color.accentColor)
+                .foregroundColor(.accentColor)
                 .padding()
                 .animation(.spring(), value: selectedDate)
-                .frame(width: 500)
+                .frame(width: 300)
             Divider().frame(height: 1)
             DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
                 .padding(.horizontal)
                 .datePickerStyle(.graphical)
+                .foregroundColor(.red)
             Divider()
+            //Text("Events:")
+                //.font(.largeTitle)
+                //.multilineTextAlignment(.center)
+            NavigationView{
+                List{
+                        Text("A League Basketball Championship")
+                            .font(.title3)
+                            .foregroundColor(.black)
+                        Text("B League Volleyball Game")
+                            .font(.title3)
+                            .foregroundColor(.black)
+                        Text("C League Ping Pong Semifinals")
+                            .font(.title3)
+                            .foregroundColor(.black)
+                }.navigationTitle("Events")
+            }
         }
-        .padding(.vertical, 100)
+        .padding(.vertical, 25)
     }
 }
 
